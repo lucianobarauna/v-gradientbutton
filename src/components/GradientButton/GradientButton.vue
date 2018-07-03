@@ -1,10 +1,11 @@
 <template lang="pug">
-  div Um componente de gradiente aqui
+  button Texto aqui dentro
+
 </template>
 
 <script>
 export default {
-
+  name: 'GradientButton'
 }
 </script>
 
