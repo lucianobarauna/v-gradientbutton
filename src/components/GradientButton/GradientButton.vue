@@ -1,11 +1,28 @@
 <template lang="pug">
-  button Texto aqui dentro
+  button(
+    :class='[customClass, classButton]'
+    )
+    span(class="gradient-button-wrap")
+      slot
 
 </template>
 
 <script>
 export default {
-  name: 'GradientButton'
+  name: 'GradientButton',
+  data: () => {
+    return {
+      classButton: 'gradient-button'
+    }
+  },
+  props: {
+    customClass: {
+      type: String,
+      default: function () {
+        return 'default'
+      }
+    }
+  }
 }
 </script>
 
