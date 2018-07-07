@@ -1,6 +1,7 @@
 <template lang="pug">
   button(
-    :class='[customClass, classButton]'
+    :class='customClass'
+    class='gradient-button'
     )
     span(class="gradient-button-wrap")
       slot

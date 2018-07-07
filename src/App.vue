@@ -1,7 +1,7 @@
 <template lang="pug">
   div(id="app")
     // router-view
-    GradientButton(customClass="classe-qualquer") Texto aqui dentro
+    GradientButton Texto aqui dentro
 </template>
 <script>
 import GradientButton from './components/GradientButton/GradientButton'
