@@ -2,22 +2,20 @@
   &-button
     border: none
     position: relative
-    &:after
+    .gradient-button-wrap
       content: ''
       position: absolute
       z-index: -1
+    span.text
+      z-index: 2
+      color: #fff
+
     // Style default button
     &.default
       padding: 20px 100px
       color: #fff
       background-color: #000
       border-radius: 50px
-      &:after
-        background: linear-gradient(45deg, #ff0, #f0f, #f00, #00f, #0f0)
-        border-radius: 50px
-        bottom: -10px
-        left: -10px
-        right: -10px
-        top: -10px
+
 
 

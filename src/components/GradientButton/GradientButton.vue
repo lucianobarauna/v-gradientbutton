@@ -3,7 +3,11 @@
     :class='customClass'
     class='gradient-button'
     )
-    span(class="gradient-button-wrap")
+    div(
+      class="gradient-button-wrap"
+      :style="{ borderRadius: radiusSize, backgroundImage: gradientBorder, bottom: posBotom, left: posLeft, right: posRight, top: posTop}"
+    )
+    span.text
       slot
 
 </template>
@@ -11,10 +15,12 @@
 <script>
 export default {
   name: 'GradientButton',
-  data: () => {
+  data () {
     return {
       classButton: 'gradient-button'
     }
+  },
+  computed: {
   },
   props: {
     customClass: {
@@ -22,6 +28,30 @@ export default {
       default: function () {
         return 'default'
       }
+    },
+    radiusSize: {
+      type: String,
+      required: true
+    },
+    gradientBorder: {
+      type: String,
+      required: true
+    },
+    posTop: {
+      type: String,
+      required: true
+    },
+    posLeft: {
+      type: String,
+      required: true
+    },
+    posBotom: {
+      type: String,
+      required: true
+    },
+    posRight: {
+      type: String,
+      required: true
     }
   }
 }
