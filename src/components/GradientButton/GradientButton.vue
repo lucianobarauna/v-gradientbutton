@@ -1,7 +1,7 @@
 <template lang="pug">
   button(
     :class='customClass'
-    class='gradient-button'
+    class='v-gradient-button'
     )
     div(
       class="gradient-button-wrap"
@@ -57,7 +57,26 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-  @import './../../assets/sass/import/_extends.sass'
-  @import './GradientButton.sass'
+<style lang="sass">
+  @import './../../assets/sass/import/_global.sass'
+
+  .v-gradient
+    &-button
+      border: none
+      position: relative
+      .gradient-button-wrap
+        content: ''
+        position: absolute
+        z-index: -1
+      span.text
+        z-index: 2
+        color: #fff
+
+      // Style default button
+      &.default
+        padding: 20px 100px
+        color: #fff
+        background-color: #000
+        border-radius: 50px
+
 </style>

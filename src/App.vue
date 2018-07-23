@@ -1,26 +1,23 @@
 <template lang="pug">
   div(id="app")
-    GradientButton(
-      posTop="-10px",
-      posLeft="-10px",
-      posBotom="-10px",
-      posRight="-10px",
-      radiusSize="50px",
-      gradientBorder= "linear-gradient(45deg, #ff0, #f0f, #f00, #00f, #0f0)"
-    ) Lorem ipsum
+    Home
 </template>
 
 <script>
-import GradientButton from './components/GradientButton/GradientButton'
+// import GradientButton from './components/GradientButton/GradientButton'
+import Home from './components/Home/Home'
 
 export default {
   name: 'app',
   components: {
-    GradientButton
+    Home
   }
 }
 </script>
 
-<style lang="scss">
-@import './assets/sass/v-gradientbutton'
+<style lang="sass">
+  @import './assets/sass/v-gradientbutton'
+
+  #app
+    height: 100%
 </style>
