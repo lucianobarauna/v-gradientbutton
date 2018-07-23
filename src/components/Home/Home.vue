@@ -13,12 +13,22 @@
 </template>
 
 <script>
+import Anime from 'anime'
 import GradientButton from './../GradientButton/GradientButton'
 export default {
   name: 'Home',
   components: {
     GradientButton
+  },
+  mounted: function () {
+    console.log('montou', Anime())
   }
+  // mounted: () => {
+  //   Anime({
+  //     targets: '.wrap',
+  //     translateX: 500
+  //   })
+  // }
 }
 </script>
 
@@ -33,8 +43,8 @@ export default {
       margin-bottom: 40px
       font-size: 42px
     .btn-demo
-      padding-left: 20px
-      padding-right: 20px
+      padding-left: 40px
+      padding-right: 40px
       height: 80px
       background-color: #fff
       border-radius: 50px
