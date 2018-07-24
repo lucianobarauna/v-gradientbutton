@@ -9,7 +9,7 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "anime": "^0.1.2",
+    "animejs": "^2.2.0",
     "vue": "^2.5.16"
   },
   "devDependencies": {

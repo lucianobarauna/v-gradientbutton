@@ -4,7 +4,6 @@
 </template>
 
 <script>
-// import GradientButton from './components/GradientButton/GradientButton'
 import Home from './components/Home/Home'
 
 export default {
