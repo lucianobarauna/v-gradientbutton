@@ -1,6 +1,6 @@
 {
-  "name": "v-gradientbutton",
-  "version": "0.1.0",
+  "name": "@lucianobarauna/v-gradientbutton",
+  "version": "0.1.1",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",

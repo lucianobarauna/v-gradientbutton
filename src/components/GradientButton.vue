@@ -1,13 +1,16 @@
 <template lang="pug">
   button(
-    :class='customClass'
-    class='v-gradient-button'
+      class='v-gradientbtn'
+      :class='customClass'
     )
     div(
-      class="gradient-button-wrap"
-      :style="{ borderRadius: radiusSize, backgroundImage: gradientBorder, bottom: posBotom, left: posLeft, right: posRight, top: posTop}"
+      class="v-gradientbtn-wrap"
+      :style="{ borderRadius: radiusSize, backgroundImage: gradientBorder, bottom: posBotom, left: posLeft, right: posRight, top: posTop, position: absolute}"
     )
-    span.text
+    span(
+      class="text"
+      :style="{zIndex: 2}"
+    )
       slot
 
 </template>
@@ -15,11 +18,6 @@
 <script>
 export default {
   name: 'GradientButton',
-  data () {
-    return {
-      classButton: 'gradient-button'
-    }
-  },
   computed: {
   },
   props: {
@@ -58,23 +56,13 @@ export default {
 </script>
 
 <style lang="sass">
-  .v-gradient
-    &-button
-      border: none
-      position: relative
-      .gradient-button-wrap
-        content: ''
-        position: absolute
-        z-index: -1
-      span.text
-        z-index: 2
-        color: #fff
 
-      // Style default button
-      &.default
-        padding: 20px 100px
-        color: #fff
-        background-color: #000
-        border-radius: 50px
+.default
+  background-color: #fff
+  border-radius: 50px
+  color: #fff
+  font-size: 20px
+  padding: 20px 50px
+  height: 70px
 
 </style>
