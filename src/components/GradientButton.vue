@@ -58,8 +58,6 @@ export default {
 </script>
 
 <style lang="sass">
-  @import './../../assets/sass/import/_global.sass'
-
   .v-gradient
     &-button
       border: none
