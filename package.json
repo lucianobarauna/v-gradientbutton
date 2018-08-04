@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:bundle": "vue-cli-service build --target lib --name v-gradientbutton ./src/components/index.js",
+    "build:bundle": "vue-cli-service build --report --target lib --name gradientButton ./src/components/GradientButton.vue",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },

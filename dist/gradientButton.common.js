@@ -96,11 +96,7 @@ __webpack_require__.r(__webpack_exports__);
 // EXTERNAL MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 var setPublicPath = __webpack_require__("HrLf");
 
-// EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
-var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("i7/w");
-var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"/mnt/c/Users/Luciano/Documents/dev/github/proj/v-gradientbutton/node_modules/.cache/vue-loader","cacheIdentifier":"02bea4b2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/GradientButton.vue?vue&type=template&id=eea8efe4&lang=pug
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"/home/vinicius/projects/github/forks/v-gradientbutton/node_modules/.cache/vue-loader","cacheIdentifier":"02bea4b2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/GradientButton.vue?vue&type=template&id=eea8efe4&lang=pug
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"v-gradient-button",class:_vm.customClass},[_c('div',{staticClass:"gradient-button-wrap",style:({ borderRadius: _vm.radiusSize, backgroundImage: _vm.gradientBorder, bottom: _vm.posBotom, left: _vm.posLeft, right: _vm.posRight, top: _vm.posTop})}),_c('span',{staticClass:"text"},[_vm._t("default")],2)])}
 var staticRenderFns = []
 
@@ -279,15 +275,10 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var GradientButton = (component.exports);
-// CONCATENATED MODULE: ./src/components/index.js
-
-
-external_commonjs_vue_commonjs2_vue_root_Vue_default.a.component(GradientButton);
-/* harmony default export */ var components = (GradientButton);
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
-/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (components);
+/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (GradientButton);
 
 
 
@@ -669,13 +660,6 @@ function applyToTag (styleElement, obj) {
 
 /***/ }),
 
-/***/ "i7/w":
-/***/ (function(module, exports) {
-
-module.exports = require("vue");
-
-/***/ }),
-
 /***/ "vBgB":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -702,5 +686,5 @@ var update = add("132df3b3", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ })
 
-/******/ });
-//# sourceMappingURL=v-gradientbutton.common.js.map
+/******/ })["default"];
+//# sourceMappingURL=gradientButton.common.js.map

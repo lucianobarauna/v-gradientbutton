@@ -1,7 +1,22 @@
-<title>v-gradientbutton demo</title>
-<script src="./v-gradientbutton.umd.js"></script>
-<link rel="stylesheet" href="./v-gradientbutton.css">
+<title>gradientButton demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./gradientButton.umd.js"></script>
+<link rel="stylesheet" href="./gradientButton.css">
+
+<div id="app">
+  <demo
+    pos-top="-10px"
+    pos-left="-10px"
+    pos-botom="-10px"
+    pos-right="-10px"
+    radius-size="80px"
+    gradient-border="linear-gradient(45deg, #5ec3e1, #95408e)">Funciona de boas</demo>
+</div>
 
 <script>
-console.log(v-gradientbutton)
+new Vue({
+  components: {
+    demo: gradientButton
+  }
+}).$mount('#app')
 </script>
